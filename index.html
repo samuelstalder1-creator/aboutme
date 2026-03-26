@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Samuel Stalder's application homepage for data science roles."
+    />
+    <meta name="theme-color" content="#f3eee3" />
+    <title>Samuel Stalder | Data Science Homepage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400;9..144,600;9..144,700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-orb orb-one" aria-hidden="true"></div>
+    <div class="background-orb orb-two" aria-hidden="true"></div>
+    <div class="background-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Go to top of page">
+        <span class="brand-mark">SS</span>
+        <span class="brand-text" id="brand-name">Samuel Stalder</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >
+        Menu
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#focus">Focus</a>
+        <a href="#projects">Projects</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#timeline">Snapshot</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="section hero">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Data Science Applications</p>
+          <h1 id="hero-title">Data science with a sharp product sense.</h1>
+          <p class="hero-summary" id="hero-summary"></p>
+
+          <div class="chip-row" id="hero-chips" aria-label="Core focus areas"></div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" id="email-link" href="#">Email me</a>
+            <a
+              class="button button-secondary"
+              id="github-link"
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View GitHub
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-panel" data-reveal>
+          <div class="panel-heading">
+            <p class="panel-kicker">Candidate Snapshot</p>
+            <p class="panel-copy" id="availability"></p>
+          </div>
+
+          <div class="signal-grid" id="signal-grid"></div>
+
+          <div class="role-card">
+            <p class="panel-kicker">Target Roles</p>
+            <ul class="role-list" id="role-list"></ul>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section summary-band" data-reveal>
+        <div>
+          <p class="section-kicker">What hiring teams should see quickly</p>
+          <h2>Clear thinking, reproducible work, and strong communication.</h2>
+        </div>
+        <p>
+          This homepage is structured to give recruiters and hiring managers a
+          concise overview of how I approach data problems, the kinds of case
+          studies I want to showcase, and how to contact me.
+        </p>
+      </section>
+
+      <section class="section" id="focus">
+        <div class="section-head" data-reveal>
+          <p class="section-kicker">Core Focus</p>
+          <h2>Where I add value in a data science team.</h2>
+        </div>
+        <div class="card-grid" id="strength-grid"></div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-head" data-reveal>
+          <p class="section-kicker">Project Storytelling</p>
+          <h2>Three case-study slots worth tailoring for each application cycle.</h2>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="section" id="workflow">
+        <div class="section-head" data-reveal>
+          <p class="section-kicker">Working Style</p>
+          <h2>A simple workflow from messy inputs to decision-ready output.</h2>
+        </div>
+        <div class="process-grid" id="process-grid"></div>
+      </section>
+
+      <section class="section" id="timeline">
+        <div class="section-head" data-reveal>
+          <p class="section-kicker">Application Snapshot</p>
+          <h2>A homepage that stays useful as projects and experience evolve.</h2>
+        </div>
+        <div class="timeline-grid" id="timeline-grid"></div>
+      </section>
+
+      <section class="section contact-panel" id="contact" data-reveal>
+        <div class="contact-copy">
+          <p class="section-kicker">Contact</p>
+          <h2>Open to data science, analytics, and machine learning opportunities.</h2>
+          <p id="contact-summary"></p>
+        </div>
+
+        <div class="contact-actions">
+          <a class="button button-primary" id="contact-email-link" href="#">
+            Start a conversation
+          </a>
+          <a
+            class="button button-secondary"
+            id="contact-github-link"
+            href="#"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Explore repositories
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Built as a static frontend for GitHub Pages. Update content in
+        <code>script.js</code>.
+      </p>
+      <p><span id="footer-name">Samuel Stalder</span> <span id="year"></span></p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
