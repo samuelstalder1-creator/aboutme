@@ -51,7 +51,18 @@
       <section class="section hero">
         <div class="hero-copy" data-reveal>
           <p class="eyebrow">Data Science Applications</p>
-          <h1 id="hero-title">Data science with a sharp product sense.</h1>
+          <h1 class="hero-title" id="hero-title">
+            <button
+              class="name-trigger"
+              id="name-trigger"
+              type="button"
+              aria-controls="particle-stage"
+              aria-pressed="false"
+            >
+              <span id="hero-name">Samuel Stalder</span>
+            </button>
+            <span class="hero-title-role" id="hero-role">Data science with a sharp product sense.</span>
+          </h1>
           <p class="hero-summary" id="hero-summary"></p>
 
           <div class="chip-row" id="hero-chips" aria-label="Core focus areas"></div>
@@ -83,6 +94,16 @@
             <ul class="role-list" id="role-list"></ul>
           </div>
         </aside>
+
+        <div class="hero-stage" id="particle-stage" data-reveal>
+          <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+          <div class="hero-stage-overlay">
+            <p class="hero-stage-kicker">Point Field</p>
+            <p class="hero-stage-copy" id="hero-stage-copy">
+              Random points drift until you click the name and pull them into a random figure.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section class="section summary-band" data-reveal>
