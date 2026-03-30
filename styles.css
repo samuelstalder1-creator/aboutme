@@ -663,7 +663,7 @@ code {
   font-size: 0.95em;
 }
 
-[data-reveal] {
+.js [data-reveal] {
   opacity: 0;
   transform: translateY(20px);
   transition:
@@ -671,7 +671,7 @@ code {
     transform 650ms ease;
 }
 
-[data-reveal].is-visible {
+.js [data-reveal].is-visible {
   opacity: 1;
   transform: translateY(0);
 }
@@ -793,7 +793,7 @@ code {
     scroll-behavior: auto !important;
   }
 
-  [data-reveal] {
+  .js [data-reveal] {
     opacity: 1;
     transform: none;
   }
