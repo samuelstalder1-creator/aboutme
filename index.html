@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Samuel Stalder's application homepage for data science roles."
+      content="Samuel Stalder, Data Scientist and ML Engineer building production NLP and generative AI systems."
     />
-    <meta name="theme-color" content="#f3eee3" />
-    <title>Samuel Stalder | Data Science Homepage</title>
+    <meta name="theme-color" content="#0b1622" />
+    <title>Samuel Stalder | Data Scientist / ML Engineer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400;9..144,600;9..144,700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="background-orb orb-one" aria-hidden="true"></div>
-    <div class="background-orb orb-two" aria-hidden="true"></div>
+    <div class="background-glow glow-one" aria-hidden="true"></div>
+    <div class="background-glow glow-two" aria-hidden="true"></div>
     <div class="background-grid" aria-hidden="true"></div>
 
     <header class="site-header">
@@ -39,36 +39,40 @@
       </button>
 
       <nav class="site-nav" id="site-nav" aria-label="Primary">
-        <a href="#focus">Focus</a>
-        <a href="#projects">Projects</a>
-        <a href="#workflow">Workflow</a>
-        <a href="#timeline">Snapshot</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#research">Research</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main id="top">
-      <section class="section hero">
+      <section class="section hero" id="about">
         <div class="hero-copy" data-reveal>
-          <p class="eyebrow">Data Science Applications</p>
-          <h1 class="hero-title" id="hero-title">
-            <button
-              class="name-trigger"
-              id="name-trigger"
-              type="button"
-              aria-controls="particle-stage"
-              aria-pressed="false"
-            >
-              <span id="hero-name">Samuel Stalder</span>
-            </button>
-            <span class="hero-title-role" id="hero-role">Data science with a sharp product sense.</span>
-          </h1>
+          <p class="eyebrow">Samuel Stalder</p>
+          <h1 class="hero-title" id="hero-role">Data Scientist / ML Engineer</h1>
           <p class="hero-summary" id="hero-summary"></p>
+
+          <div class="meta-cluster">
+            <span class="meta-pill" id="hero-location"></span>
+            <span class="meta-pill" id="hero-status"></span>
+          </div>
 
           <div class="chip-row" id="hero-chips" aria-label="Core focus areas"></div>
 
           <div class="hero-actions">
-            <a class="button button-primary" id="email-link" href="#">Email me</a>
+            <a class="button button-primary" id="email-link" href="#">Email</a>
+            <a
+              class="button button-secondary"
+              id="linkedin-link"
+              href="#"
+              target="_blank"
+              rel="noreferrer"
+            >
+              LinkedIn
+            </a>
             <a
               class="button button-secondary"
               id="github-link"
@@ -76,99 +80,124 @@
               target="_blank"
               rel="noreferrer"
             >
-              View GitHub
+              GitHub
             </a>
           </div>
         </div>
 
         <aside class="hero-panel" data-reveal>
           <div class="panel-heading">
-            <p class="panel-kicker">Candidate Snapshot</p>
+            <p class="panel-kicker">At A Glance</p>
             <p class="panel-copy" id="availability"></p>
           </div>
 
-          <div class="signal-grid" id="signal-grid"></div>
+          <div class="metric-grid" id="metric-grid"></div>
 
-          <div class="role-card">
-            <p class="panel-kicker">Target Roles</p>
-            <ul class="role-list" id="role-list"></ul>
+          <div class="focus-card">
+            <p class="panel-kicker">Current Focus</p>
+            <ul class="focus-list" id="focus-list"></ul>
           </div>
         </aside>
 
-        <div class="hero-stage" id="particle-stage" data-reveal>
-          <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
-          <div class="hero-stage-overlay">
-            <p class="hero-stage-kicker">Point Field</p>
-            <p class="hero-stage-copy" id="hero-stage-copy">
-              Random points drift until you click the name and pull them into a random figure.
+        <section class="signal-board" data-reveal aria-labelledby="selected-work-title">
+          <div class="board-head">
+            <div>
+              <p class="panel-kicker">Selected Work</p>
+              <h2 id="selected-work-title">Enterprise ML, research, and delivery.</h2>
+            </div>
+            <p class="board-note">
+              Focused on production systems with measurable outcomes and clear operational value.
             </p>
           </div>
-        </div>
+
+          <div class="board-grid" id="highlight-grid"></div>
+        </section>
       </section>
 
       <section class="section summary-band" data-reveal>
         <div>
-          <p class="section-kicker">What hiring teams should see quickly</p>
-          <h2>Clear thinking, reproducible work, and strong communication.</h2>
+          <p class="section-kicker">Profile</p>
+          <h2>Production NLP and generative AI with a software engineering base.</h2>
         </div>
-        <p>
-          This homepage is structured to give recruiters and hiring managers a
-          concise overview of how I approach data problems, the kinds of case
-          studies I want to showcase, and how to contact me.
-        </p>
+        <p id="profile-summary"></p>
       </section>
 
-      <section class="section" id="focus">
+      <section class="section" id="experience">
         <div class="section-head" data-reveal>
-          <p class="section-kicker">Core Focus</p>
-          <h2>Where I add value in a data science team.</h2>
+          <p class="section-kicker">Experience</p>
+          <h2>Roles across enterprise software, applied machine learning, and research.</h2>
         </div>
-        <div class="card-grid" id="strength-grid"></div>
+        <div class="experience-grid" id="experience-grid"></div>
       </section>
 
-      <section class="section" id="projects">
+      <section class="section" id="research">
         <div class="section-head" data-reveal>
-          <p class="section-kicker">Project Storytelling</p>
-          <h2>Three case-study slots worth tailoring for each application cycle.</h2>
+          <p class="section-kicker">Research</p>
+          <h2>Current NLP and information quality topics.</h2>
         </div>
-        <div class="project-grid" id="project-grid"></div>
+        <div class="research-grid" id="research-grid"></div>
       </section>
 
-      <section class="section" id="workflow">
+      <section class="section" id="skills">
         <div class="section-head" data-reveal>
-          <p class="section-kicker">Working Style</p>
-          <h2>A simple workflow from messy inputs to decision-ready output.</h2>
+          <p class="section-kicker">Skills</p>
+          <h2>Applied machine learning, software delivery, and infrastructure.</h2>
         </div>
-        <div class="process-grid" id="process-grid"></div>
+
+        <div class="skills-layout">
+          <div class="skills-table" id="skills-table"></div>
+
+          <div class="side-stack">
+            <article class="info-card" data-reveal>
+              <p class="panel-kicker">Communication</p>
+              <ul class="detail-list" id="communication-list"></ul>
+            </article>
+
+            <article class="info-card" data-reveal>
+              <p class="panel-kicker">Additional</p>
+              <div class="detail-block">
+                <p class="detail-label">Community service</p>
+                <p id="service-copy"></p>
+              </div>
+              <div class="detail-block">
+                <p class="detail-label">Interests</p>
+                <p id="interests-copy"></p>
+              </div>
+            </article>
+          </div>
+        </div>
       </section>
 
-      <section class="section" id="timeline">
+      <section class="section" id="education">
         <div class="section-head" data-reveal>
-          <p class="section-kicker">Application Snapshot</p>
-          <h2>A homepage that stays useful as projects and experience evolve.</h2>
+          <p class="section-kicker">Education</p>
+          <h2>Formal training across data science, software engineering, and development.</h2>
         </div>
-        <div class="timeline-grid" id="timeline-grid"></div>
+        <div class="education-grid" id="education-grid"></div>
       </section>
 
       <section class="section contact-panel" id="contact" data-reveal>
         <div class="contact-copy">
           <p class="section-kicker">Contact</p>
-          <h2>Open to data science, analytics, and machine learning opportunities.</h2>
+          <h2>Available for conversations around data science, ML engineering, and NLP work.</h2>
           <p id="contact-summary"></p>
         </div>
 
         <div class="contact-actions">
           <a class="button button-primary" id="contact-email-link" href="#">
-            Start a conversation
+            Email
+          </a>
+          <a class="button button-secondary" id="phone-link" href="#">
+            Call
           </a>
           <a
             class="button button-secondary"
-            id="contact-github-link"
+            id="contact-linkedin-link"
             href="#"
             target="_blank"
             rel="noreferrer"
           >
-            Explore repositories
+            LinkedIn
           </a>
         </div>
       </section>
@@ -176,8 +205,7 @@
 
     <footer class="site-footer">
       <p>
-        Built as a static frontend for GitHub Pages. Update content in
-        <code>script.js</code>.
+        Static site for GitHub Pages. Content lives in <code>script.js</code>.
       </p>
       <p><span id="footer-name">Samuel Stalder</span> <span id="year"></span></p>
     </footer>

@@ -1,133 +1,203 @@
 const siteContent = {
   profile: {
     name: "Samuel Stalder",
-    title: "Data Science Candidate",
+    title: "Data Scientist / ML Engineer",
     summary:
-      "I build application-ready narratives around data work: structured analysis, practical machine learning, and communication that makes results easy to act on.",
+      "ML Engineer with production experience building and deploying NLP and generative AI systems for enterprise clients. Delivered multimodal document understanding pipelines, RAG-based support assistants, and text classification solutions, and operated model-serving infrastructure in Kubernetes environments. Currently pursuing a part-time M.Sc. in Data Science with research in NLP and information retrieval.",
+    heroSummary:
+      "Building production NLP and generative AI systems for enterprise clients, with a background that combines software engineering, research, and pragmatic delivery.",
     availability:
-      "Open to internships, thesis collaborations, and entry-level roles in data science, analytics, or machine learning.",
+      "Currently Machine Learning Engineer at BSI Software, pursuing a part-time M.Sc. in Data Science at ZHAW, and contributing to NLP-related research at InIT.",
     contactSummary:
-      "The fastest way to reach me is by email. GitHub is the best place to review code, notebooks, and future case studies.",
-    email: "staldsam@students.zhaw.ch",
+      "Email is the fastest way to reach me. Happy to discuss data science, ML engineering, NLP, and applied AI work.",
+    location: "Zurich, Switzerland",
+    status: "BSI Software + ZHAW Data Science M.Sc.",
+    email: "samu.stalder@gmail.com",
+    phoneDisplay: "079 269 40 25",
+    phoneHref: "+41792694025",
+    linkedin: "https://www.linkedin.com/in/samuel-stalder",
     github: "https://github.com/samuelstalder1-creator",
     heroChips: [
-      "Predictive modeling",
-      "Analytics storytelling",
-      "Experiment design",
-      "Reproducible workflows",
+      "Multimodal NLP",
+      "RAG Systems",
+      "Text Classification",
+      "vLLM",
+      "Kubernetes",
+      "Responsible AI",
     ],
-    roles: [
-      "Data Scientist",
-      "Machine Learning Engineer",
-      "Analytics Engineer",
+    focus: [
+      "Multimodal document understanding for noisy real-world inputs",
+      "Support automation with retrieval-augmented generation",
+      "NLP classifiers for operational workflows",
+      "Reliable model serving and governance in enterprise settings",
     ],
-    signals: [
+    metrics: [
       {
-        label: "Strength",
-        value: "Problem framing",
-        copy: "Turn ambiguous requests into measurable questions and useful outputs.",
+        value: "50%",
+        label: "Process automation",
+        copy: "Achieved in document extraction workflows for a major German retailer.",
       },
       {
-        label: "Approach",
-        value: "Model with context",
-        copy: "Choose methods that match the decision, not just the benchmark.",
+        value: "2%",
+        label: "Error rate",
+        copy: "Delivered by a production document understanding pipeline.",
       },
       {
-        label: "Delivery",
-        value: "Readable results",
-        copy: "Present analysis so product, ops, and business teams can use it.",
+        value: "-20%",
+        label: "Inbound support emails",
+        copy: "Reduced through a RAG-based assistant for a logistics client.",
       },
       {
-        label: "Standard",
-        value: "Reliable process",
-        copy: "Bias toward reproducibility, versioning, and careful evaluation.",
+        value: "vLLM + K8s",
+        label: "Serving stack",
+        copy: "Operated model-serving infrastructure in an AI-as-a-Service setup.",
       },
     ],
   },
-  strengths: [
+  highlights: [
     {
-      title: "Applied machine learning",
-      body: "Comfortable moving from exploratory analysis to feature engineering, baseline comparison, model evaluation, and interpretation.",
-      meta: "Good for predictive modeling and classification work",
+      label: "01",
+      title: "Multimodal document understanding",
+      body: "Designed and deployed a Qwen-based pipeline for scanned order cards, extracting structured data from noisy retail documents with measurable production impact.",
+      meta: "LLMs / data extraction / enterprise rollout",
     },
     {
-      title: "Analytics with business context",
-      body: "I care about the operational meaning of a metric, not just whether it improved on paper.",
-      meta: "Useful when teams need data work tied to decisions",
+      label: "02",
+      title: "RAG support assistant",
+      body: "Built a retrieval-augmented customer support chatbot for a logistics company, reducing inbound support emails and shifting recurring work away from manual handling.",
+      meta: "RAG / support workflows / business impact",
     },
     {
-      title: "Communication that travels",
-      body: "Strong data work only matters if stakeholders understand the assumptions, tradeoffs, and outcome.",
-      meta: "Ideal for presentations, dashboards, and written summaries",
+      label: "03",
+      title: "Email routing automation",
+      body: "Developed NLP classifiers for a mobility service provider to automate customer support email routing and improve downstream operational handling.",
+      meta: "Classification / workflow automation / NLP",
     },
     {
-      title: "Clean working habits",
-      body: "Reproducible notebooks, organized experiments, and careful handling of data quality issues are part of the baseline.",
-      meta: "Important for reliable handoff and iteration",
-    },
-  ],
-  projects: [
-    {
-      number: "01",
-      label: "Case Study Slot",
-      title: "Forecasting or planning project",
-      body: "Use this section for the project that best shows how you improved a baseline, justified your evaluation metric, and connected the result to real planning decisions.",
-      tags: ["Time series", "Feature design", "Model comparison"],
-    },
-    {
-      number: "02",
-      label: "Case Study Slot",
-      title: "Classification or risk model",
-      body: "Highlight a project where the question, threshold, or precision-recall tradeoff mattered. This is usually the strongest proof of practical modeling judgment.",
-      tags: ["Classification", "Thresholds", "Decision support"],
-    },
-    {
-      number: "03",
-      label: "Case Study Slot",
-      title: "NLP, experimentation, or product analytics",
-      body: "Use one slot for work that shows range: unstructured data, experimentation, causal thinking, or a workflow that helped product or operations teams act faster.",
-      tags: ["NLP", "Experiments", "Business impact"],
+      label: "04",
+      title: "Serving and responsible AI",
+      body: "Combined model-serving operations with responsible AI work, including vLLM and Kubernetes infrastructure as well as project-level ethics enablement.",
+      meta: "MLOps / governance / delivery",
     },
   ],
-  process: [
+  experience: [
     {
-      step: "01",
-      title: "Frame the decision",
-      body: "Clarify the question, success metric, time horizon, and which stakeholder decision the analysis needs to support.",
+      company: "BSI Software",
+      location: "Zurich, Switzerland",
+      roles: [
+        {
+          title: "Machine Learning Engineer",
+          period: "2024 - Present",
+          bullets: [
+            "Designed and deployed a Qwen-based multimodal LLM pipeline for document understanding and data extraction from scanned order cards for a major German retailer, achieving 50% process automation with a 2% error rate.",
+            "Built a RAG-based customer support chatbot for a logistics company, reducing inbound support emails by 20%.",
+            "Developed NLP classifiers to automate routing of customer support emails for a mobility service provider.",
+            "Operated model serving infrastructure using vLLM and Kubernetes in an AI-as-a-Service architecture.",
+            "Served as Ethics Enabler, embedding responsible AI practices across project delivery.",
+          ],
+        },
+        {
+          title: "Software Engineer",
+          period: "2022 - 2024",
+          bullets: [
+            "Engineered backend and frontend components of a mission-critical retail application for Swiss Post using Java, Eclipse Scout, and web technologies.",
+            "Integrated external hardware such as payment terminals and connected data systems including Kafka, Oracle, and MariaDB.",
+            "Contributed to requirements engineering, testing, and system maintenance in an agile environment.",
+          ],
+        },
+      ],
     },
     {
-      step: "02",
-      title: "Inspect the data",
-      body: "Audit granularity, missingness, leakage risks, and what the dataset can honestly support before pushing toward modeling.",
+      company: "ZHAW InIT",
+      location: "Winterthur, Switzerland",
+      roles: [
+        {
+          title: "Research Project",
+          period: "2025 - Present",
+          bullets: [
+            "Training a BERT-based classifier to detect covert advertisement injected into RAG system outputs.",
+            "Researching detection of AI-generated text using supervised, stylometric, and zero-shot approaches.",
+            "Authoring a survey paper on the Dead Internet Theory, linking technical findings to societal implications.",
+          ],
+        },
+      ],
     },
     {
-      step: "03",
-      title: "Build and compare",
-      body: "Start with simple baselines, then increase sophistication only when it changes the result in a meaningful way.",
-    },
-    {
-      step: "04",
-      title: "Explain and ship",
-      body: "Deliver outputs that are easy to re-run, easy to review, and clear enough that a non-specialist can trust the takeaway.",
+      company: "Novalink",
+      location: "Frauenfeld, Thurgau",
+      roles: [
+        {
+          title: "Full Stack Intern",
+          period: "2017 - 2018",
+          bullets: [
+            "Developed features for an enterprise alerting web application using JavaScript, Angular.js, .NET, and MySQL.",
+          ],
+        },
+      ],
     },
   ],
-  timeline: [
+  research: [
     {
-      year: "Now",
-      title: "Targeting data science roles",
-      body: "This homepage is designed as a reusable front door for applications in data science, analytics, and machine learning.",
+      title: "RAG output integrity",
+      body: "Training a BERT-based classifier to identify covert advertising injected into retrieval-augmented generation outputs.",
+      meta: "Classification / trust / evaluation",
     },
     {
-      year: "Next",
-      title: "Tailored case studies",
-      body: "The project cards are ready to be replaced with role-specific examples, metrics, datasets, and repository links.",
+      title: "AI-generated text detection",
+      body: "Comparing supervised, stylometric, and zero-shot approaches for detecting machine-generated text in realistic settings.",
+      meta: "NLP / stylometry / detection",
     },
     {
-      year: "Ongoing",
-      title: "Portfolio that stays current",
-      body: "Because the site is static and lightweight, it can be updated quickly whenever new coursework, internships, or personal projects are ready.",
+      title: "Dead Internet Theory survey",
+      body: "Writing a survey paper that links technical findings around synthetic content and online signals to broader societal implications.",
+      meta: "Research synthesis / societal context",
     },
   ],
+  skills: [
+    {
+      label: "ML / AI",
+      items:
+        "PyTorch, Hugging Face Transformers, scikit-learn, vLLM, RAG, agentic systems, NLP",
+    },
+    {
+      label: "Languages",
+      items: "Python, TypeScript, Java, SQL",
+    },
+    {
+      label: "Infrastructure",
+      items: "Kubernetes, Docker, Kafka, Oracle, MariaDB, Jupyter, n8n",
+    },
+    {
+      label: "Practices",
+      items: "Responsible AI, MLOps, Agile / Scrum",
+    },
+  ],
+  communication: ["German (native)", "English (C1)"],
+  education: [
+    {
+      degree: "M.Sc. Data Science (part-time)",
+      institution: "ZHAW School of Engineering, InIT",
+      period: "2024 - Present",
+      note: "Advanced study alongside industry work, centered on data science and NLP-related research.",
+    },
+    {
+      degree: "B.Sc. Computer Science",
+      institution: "ZHAW School of Engineering",
+      period: "2019 - 2022",
+      note: "Academic foundation in software engineering and computing.",
+    },
+    {
+      degree: "EFZ Application Developer",
+      institution: "IMS Frauenfeld",
+      period: "2014 - 2018",
+      note: "Vocational training in application development.",
+    },
+  ],
+  additional: {
+    service:
+      "Nursing assistance, refugee aid, farm work, and youth hostel operations (2018 - 2024).",
+    interests: "Triathlon, fermentation, photography, and violin.",
+  },
 };
 
 const text = (selector, value) => {
@@ -154,21 +224,6 @@ const setLink = (selector, href, label) => {
   }
 };
 
-const renderSignals = () => {
-  const container = document.querySelector("#signal-grid");
-  container.innerHTML = siteContent.profile.signals
-    .map(
-      ({ label, value, copy }) => `
-        <article class="signal">
-          <strong>${label}</strong>
-          <h3>${value}</h3>
-          <p>${copy}</p>
-        </article>
-      `,
-    )
-    .join("");
-};
-
 const renderChips = () => {
   html(
     "#hero-chips",
@@ -178,78 +233,126 @@ const renderChips = () => {
   );
 };
 
-const renderRoles = () => {
+const renderMetrics = () => {
+  const container = document.querySelector("#metric-grid");
+  container.innerHTML = siteContent.profile.metrics
+    .map(
+      ({ value, label, copy }) => `
+        <article class="metric-card">
+          <span class="metric-value">${value}</span>
+          <p class="metric-label">${label}</p>
+          <p>${copy}</p>
+        </article>
+      `,
+    )
+    .join("");
+};
+
+const renderFocus = () => {
   html(
-    "#role-list",
-    siteContent.profile.roles.map((role) => `<li>${role}</li>`).join(""),
+    "#focus-list",
+    siteContent.profile.focus.map((item) => `<li>${item}</li>`).join(""),
   );
 };
 
-const renderStrengths = () => {
-  const container = document.querySelector("#strength-grid");
-  container.innerHTML = siteContent.strengths
+const renderHighlights = () => {
+  const container = document.querySelector("#highlight-grid");
+  container.innerHTML = siteContent.highlights
+    .map(
+      ({ label, title, body, meta }) => `
+        <article class="highlight-card">
+          <p class="card-kicker">${label}</p>
+          <h3>${title}</h3>
+          <p>${body}</p>
+          <span class="highlight-meta">${meta}</span>
+        </article>
+      `,
+    )
+    .join("");
+};
+
+const renderExperience = () => {
+  const container = document.querySelector("#experience-grid");
+  container.innerHTML = siteContent.experience
+    .map(
+      ({ company, location, roles }) => `
+        <article class="experience-card" data-reveal>
+          <div class="card-header">
+            <div>
+              <p class="card-kicker">Experience</p>
+              <h3>${company}</h3>
+            </div>
+            <p class="card-location">${location}</p>
+          </div>
+          ${roles
+            .map(
+              ({ title, period, bullets }) => `
+                <section class="role-block">
+                  <div class="role-head">
+                    <h4>${title}</h4>
+                    <p class="role-period">${period}</p>
+                  </div>
+                  <ul class="role-points">
+                    ${bullets.map((bullet) => `<li>${bullet}</li>`).join("")}
+                  </ul>
+                </section>
+              `,
+            )
+            .join("")}
+        </article>
+      `,
+    )
+    .join("");
+};
+
+const renderResearch = () => {
+  const container = document.querySelector("#research-grid");
+  container.innerHTML = siteContent.research
     .map(
       ({ title, body, meta }) => `
-        <article class="card" data-reveal>
+        <article class="research-card" data-reveal>
+          <p class="card-kicker">Topic</p>
           <h3>${title}</h3>
           <p>${body}</p>
-          <div class="meta-row">
-            <span class="meta-dot" aria-hidden="true"></span>
-            <span>${meta}</span>
-          </div>
+          <span class="research-meta">${meta}</span>
         </article>
       `,
     )
     .join("");
 };
 
-const renderProjects = () => {
-  const container = document.querySelector("#project-grid");
-  container.innerHTML = siteContent.projects
+const renderSkills = () => {
+  const container = document.querySelector("#skills-table");
+  container.innerHTML = siteContent.skills
     .map(
-      ({ number, label, title, body, tags }) => `
-        <article class="project-card" data-reveal>
-          <div class="project-top">
-            <p class="project-label">${label}</p>
-            <span class="project-number">${number}</span>
-          </div>
-          <div>
-            <h3>${title}</h3>
-            <p>${body}</p>
-          </div>
-          <ul class="project-tags">
-            ${tags.map((tag) => `<li>${tag}</li>`).join("")}
-          </ul>
+      ({ label, items }) => `
+        <article class="skill-row" data-reveal>
+          <div class="skill-label">${label}</div>
+          <p>${items}</p>
         </article>
       `,
     )
     .join("");
 };
 
-const renderProcess = () => {
-  const container = document.querySelector("#process-grid");
-  container.innerHTML = siteContent.process
-    .map(
-      ({ step, title, body }) => `
-        <article class="process-card" data-reveal>
-          <span class="process-step">${step}</span>
-          <h3>${title}</h3>
-          <p>${body}</p>
-        </article>
-      `,
-    )
-    .join("");
+const renderCommunication = () => {
+  html(
+    "#communication-list",
+    siteContent.communication.map((item) => `<li>${item}</li>`).join(""),
+  );
 };
 
-const renderTimeline = () => {
-  const container = document.querySelector("#timeline-grid");
-  container.innerHTML = siteContent.timeline
+const renderEducation = () => {
+  const container = document.querySelector("#education-grid");
+  container.innerHTML = siteContent.education
     .map(
-      ({ year, title, body }) => `
-        <article class="timeline-card" data-reveal>
-          <p class="timeline-year">${year}</p>
-          <h3>${title}</h3>
-          <p>${body}</p>
+      ({ degree, institution, period, note }) => `
+        <article class="education-card" data-reveal>
+          <p class="card-kicker">Education</p>
+          <h3>${degree}</h3>
+          <p>${institution}</p>
+          <p class="education-period">${period}</p>
+          <p class="education-note">${note}</p>
         </article>
       `,
     )
@@ -273,7 +376,7 @@ const initReveal = () => {
         }
       });
     },
-    { threshold: 0.18 },
+    { threshold: 0.16 },
   );
 
   revealNodes.forEach((node) => observer.observe(node));
@@ -300,467 +403,41 @@ const initNav = () => {
   });
 };
 
-const initParticleField = (profileName) => {
-  const stage = document.querySelector("#particle-stage");
-  const canvas = document.querySelector("#hero-canvas");
-  const trigger = document.querySelector("#name-trigger");
-  const stageCopy = document.querySelector("#hero-stage-copy");
-
-  if (!stage || !canvas || !trigger) {
-    return;
-  }
-
-  const ctx = canvas.getContext("2d");
-
-  if (!ctx) {
-    return;
-  }
-
-  const TAU = Math.PI * 2;
-  const motionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
-  const pointPalette = ["#11263d", "#0e8f82", "#ef7a43", "#f6f1e7"];
-  const state = {
-    width: 0,
-    height: 0,
-    dpr: 1,
-    mode: "scatter",
-    particles: [],
-    scatterTargets: [],
-    figureTargets: [],
-    frameId: 0,
-    currentFigure: null,
-  };
-
-  const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
-  const lerp = (start, end, amount) => start + (end - start) * amount;
-  const shuffle = (items) => {
-    for (let index = items.length - 1; index > 0; index -= 1) {
-      const swapIndex = Math.floor(Math.random() * (index + 1));
-      [items[index], items[swapIndex]] = [items[swapIndex], items[index]];
-    }
-
-    return items;
-  };
-
-  const samplePolyline = (points, count, closed = true) => {
-    const path = closed ? [...points, points[0]] : points;
-    const segments = [];
-    let totalLength = 0;
-
-    for (let index = 0; index < path.length - 1; index += 1) {
-      const start = path[index];
-      const end = path[index + 1];
-      const length = Math.hypot(end.x - start.x, end.y - start.y);
-
-      segments.push({ start, end, length });
-      totalLength += length;
-    }
-
-    if (!totalLength) {
-      return Array.from({ length: count }, () => ({ x: 0, y: 0 }));
-    }
-
-    return Array.from({ length: count }, (_, index) => {
-      const targetDistance = (index / Math.max(count, 1)) * totalLength;
-      let distance = 0;
-
-      for (const segment of segments) {
-        if (distance + segment.length >= targetDistance) {
-          const amount = (targetDistance - distance) / Math.max(segment.length, 1);
-
-          return {
-            x: lerp(segment.start.x, segment.end.x, amount),
-            y: lerp(segment.start.y, segment.end.y, amount),
-          };
-        }
-
-        distance += segment.length;
-      }
-
-      return {
-        x: segments[segments.length - 1].end.x,
-        y: segments[segments.length - 1].end.y,
-      };
-    });
-  };
-
-  const figures = [
-    {
-      key: "star",
-      label: "star figure",
-      build(count) {
-        const vertices = Array.from({ length: 10 }, (_, index) => {
-          const angle = -Math.PI / 2 + (index / 10) * TAU;
-          const radius = index % 2 === 0 ? 1 : 0.42;
-
-          return {
-            x: Math.cos(angle) * radius,
-            y: Math.sin(angle) * radius,
-          };
-        });
-
-        return samplePolyline(vertices, count, true);
-      },
-    },
-    {
-      key: "spiral",
-      label: "spiral figure",
-      build(count) {
-        return Array.from({ length: count }, (_, index) => {
-          const amount = index / Math.max(count - 1, 1);
-          const angle = amount * Math.PI * 4.5;
-          const radius = 0.14 + amount * 0.82;
-
-          return {
-            x: Math.cos(angle) * radius * 0.88,
-            y: Math.sin(angle) * radius * 0.68,
-          };
-        });
-      },
-    },
-    {
-      key: "infinity",
-      label: "infinity figure",
-      build(count) {
-        return Array.from({ length: count }, (_, index) => {
-          const angle = (index / Math.max(count, 1)) * TAU;
-
-          return {
-            x: Math.sin(angle),
-            y: Math.sin(angle * 2) * 0.56,
-          };
-        });
-      },
-    },
-    {
-      key: "flower",
-      label: "flower figure",
-      build(count) {
-        return Array.from({ length: count }, (_, index) => {
-          const angle = (index / Math.max(count, 1)) * TAU;
-          const radius = 0.28 + 0.54 * Math.cos(angle * 5);
-
-          return {
-            x: Math.cos(angle) * radius,
-            y: Math.sin(angle) * radius,
-          };
-        });
-      },
-    },
-    {
-      key: "lightning",
-      label: "lightning figure",
-      build(count) {
-        return samplePolyline(
-          [
-            { x: -0.48, y: -0.92 },
-            { x: -0.12, y: -0.2 },
-            { x: -0.34, y: -0.18 },
-            { x: 0.2, y: 0.92 },
-            { x: 0.04, y: 0.18 },
-            { x: 0.42, y: 0.18 },
-            { x: -0.04, y: -0.88 },
-          ],
-          count,
-          false,
-        );
-      },
-    },
-    {
-      key: "wave",
-      label: "wave figure",
-      build(count) {
-        return Array.from({ length: count }, (_, index) => {
-          const amount = index / Math.max(count - 1, 1);
-          const x = -1 + amount * 2;
-          const y = Math.sin(amount * TAU * 2.2) * 0.38;
-
-          return { x, y };
-        });
-      },
-    },
-  ];
-
-  const pickRandomFigure = () => {
-    let nextIndex = Math.floor(Math.random() * figures.length);
-
-    if (
-      state.currentFigure &&
-      figures.length > 1 &&
-      figures[nextIndex].key === state.currentFigure.key
-    ) {
-      nextIndex =
-        (nextIndex + 1 + Math.floor(Math.random() * (figures.length - 1))) %
-        figures.length;
-    }
-
-    return figures[nextIndex];
-  };
-
-  const setStageCopy = () => {
-    if (!stageCopy) {
-      return;
-    }
-
-    stageCopy.textContent =
-      state.mode === "figure" && state.currentFigure
-        ? `The points are holding a ${state.currentFigure.label}. Click ${profileName} again to release them.`
-        : `Random points drift until you click ${profileName} and pull them into a random figure.`;
-  };
-
-  const setMode = (nextMode) => {
-    state.mode = nextMode;
-    const isFigure = nextMode === "figure";
-    trigger.classList.toggle("is-active", isFigure);
-    trigger.setAttribute("aria-pressed", String(isFigure));
-    stage.classList.toggle("is-figure", isFigure);
-    setStageCopy();
-  };
-
-  const createScatterTargets = (count) =>
-    Array.from({ length: count }, (_, index) => ({
-      x: 24 + Math.random() * Math.max(state.width - 48, 1),
-      y: 24 + Math.random() * Math.max(state.height - 48, 1),
-      swingX: 8 + Math.random() * 24,
-      swingY: 8 + Math.random() * 22,
-      phase: Math.random() * TAU + index * 0.03,
-      speed: 0.55 + Math.random() * 0.75,
-    }));
-
-  const createFigureTargets = (count, figure) => {
-    const rawPoints = figure.build(count);
-    const frameWidth = state.width * 0.6;
-    const frameHeight = state.height * 0.54;
-    const centerX = state.width * 0.5;
-    const centerY = state.height * 0.52;
-    const angle =
-      figure.key === "lightning"
-        ? -0.18 + Math.random() * 0.36
-        : Math.random() * TAU;
-    const cos = Math.cos(angle);
-    const sin = Math.sin(angle);
-
-    return shuffle(
-      rawPoints.map((point, index) => {
-        const rotatedX = point.x * cos - point.y * sin;
-        const rotatedY = point.x * sin + point.y * cos;
-
-        return {
-          x: centerX + rotatedX * frameWidth * 0.5,
-          y: centerY + rotatedY * frameHeight * 0.5,
-          wobbleX: 0.8 + Math.random() * 2,
-          wobbleY: 0.8 + Math.random() * 2,
-          phase: Math.random() * TAU + index * 0.02,
-          speed: 0.8 + Math.random() * 0.7,
-        };
-      }),
-    );
-  };
-
-  const buildParticles = () => {
-    const particleCount = Math.max(
-      180,
-      Math.min(340, Math.floor((state.width * state.height) / 1200)),
-    );
-
-    state.scatterTargets = createScatterTargets(particleCount);
-    state.figureTargets = createFigureTargets(
-      particleCount,
-      state.currentFigure || figures[0],
-    );
-    state.particles = state.scatterTargets.map((target, index) => ({
-      x: target.x + (Math.random() - 0.5) * 64,
-      y: target.y + (Math.random() - 0.5) * 64,
-      vx: 0,
-      vy: 0,
-      radius: 1.25 + Math.random() * 1.9,
-      color: pointPalette[index % pointPalette.length],
-      phase: Math.random() * TAU,
-    }));
-  };
-
-  const getTargetPosition = (index, time) => {
-    if (state.mode === "figure") {
-      const target = state.figureTargets[index];
-
-      return {
-        x: target.x + Math.cos(time * target.speed + target.phase) * target.wobbleX,
-        y:
-          target.y +
-          Math.sin(time * (target.speed + 0.22) + target.phase) * target.wobbleY,
-      };
-    }
-
-    const target = state.scatterTargets[index];
-
-    return {
-      x: target.x + Math.cos(time * target.speed + target.phase) * target.swingX,
-      y:
-        target.y +
-        Math.sin(time * (target.speed + 0.18) + target.phase) * target.swingY,
-    };
-  };
-
-  const paint = (timestamp, freeze = false) => {
-    const time = timestamp * 0.001;
-
-    ctx.clearRect(0, 0, state.width, state.height);
-
-    const glow = ctx.createRadialGradient(
-      state.width * 0.58,
-      state.height * 0.5,
-      24,
-      state.width * 0.58,
-      state.height * 0.5,
-      state.width * 0.34,
-    );
-
-    if (state.mode === "figure") {
-      glow.addColorStop(0, "rgba(14, 143, 130, 0.26)");
-      glow.addColorStop(0.5, "rgba(239, 122, 67, 0.12)");
-      glow.addColorStop(1, "rgba(14, 143, 130, 0)");
-    } else {
-      glow.addColorStop(0, "rgba(17, 38, 61, 0.08)");
-      glow.addColorStop(0.5, "rgba(14, 143, 130, 0.08)");
-      glow.addColorStop(1, "rgba(14, 143, 130, 0)");
-    }
-
-    ctx.fillStyle = glow;
-    ctx.fillRect(0, 0, state.width, state.height);
-
-    state.particles.forEach((particle, index) => {
-      const target = getTargetPosition(index, time);
-
-      if (freeze) {
-        particle.x = target.x;
-        particle.y = target.y;
-      } else {
-        const tension = state.mode === "figure" ? 0.026 : 0.018;
-        const damping = state.mode === "figure" ? 0.86 : 0.9;
-
-        particle.vx = (particle.vx + (target.x - particle.x) * tension) * damping;
-        particle.vy = (particle.vy + (target.y - particle.y) * tension) * damping;
-        particle.x += particle.vx;
-        particle.y += particle.vy;
-      }
-
-      const pulse = state.mode === "figure" ? 0.32 : 0.22;
-
-      ctx.globalAlpha = state.mode === "figure" ? 0.92 : 0.72;
-      ctx.fillStyle = particle.color;
-      ctx.beginPath();
-      ctx.arc(
-        particle.x,
-        particle.y,
-        particle.radius + Math.sin(time * 2.4 + particle.phase) * pulse,
-        0,
-        TAU,
-      );
-      ctx.fill();
-    });
-
-    ctx.globalAlpha = 1;
-  };
-
-  const render = (timestamp) => {
-    paint(timestamp);
-    state.frameId = window.requestAnimationFrame(render);
-  };
-
-  const syncAnimation = () => {
-    window.cancelAnimationFrame(state.frameId);
-
-    if (motionQuery.matches) {
-      paint(performance.now(), true);
-      return;
-    }
-
-    state.frameId = window.requestAnimationFrame(render);
-  };
-
-  const resizeScene = () => {
-    state.width = Math.max(Math.round(stage.clientWidth), 1);
-    state.height = Math.max(Math.round(stage.clientHeight), 1);
-    state.dpr = Math.min(window.devicePixelRatio || 1, 2);
-
-    canvas.width = state.width * state.dpr;
-    canvas.height = state.height * state.dpr;
-    ctx.setTransform(state.dpr, 0, 0, state.dpr, 0, 0);
-
-    buildParticles();
-
-    if (state.mode === "figure" && state.currentFigure) {
-      state.figureTargets = createFigureTargets(
-        state.particles.length,
-        state.currentFigure,
-      );
-    }
-
-    syncAnimation();
-  };
-
-  trigger.addEventListener("click", () => {
-    if (state.mode === "figure") {
-      setMode("scatter");
-    } else {
-      state.currentFigure = pickRandomFigure();
-      state.figureTargets = createFigureTargets(
-        state.particles.length || state.scatterTargets.length,
-        state.currentFigure,
-      );
-      setMode("figure");
-    }
-
-    if (motionQuery.matches) {
-      paint(performance.now(), true);
-    }
-  });
-
-  if ("ResizeObserver" in window) {
-    const resizeObserver = new ResizeObserver(() => resizeScene());
-    resizeObserver.observe(stage);
-  } else {
-    window.addEventListener("resize", resizeScene);
-  }
-
-  if (typeof motionQuery.addEventListener === "function") {
-    motionQuery.addEventListener("change", syncAnimation);
-  } else if (typeof motionQuery.addListener === "function") {
-    motionQuery.addListener(syncAnimation);
-  }
-
-  setMode("scatter");
-  resizeScene();
-};
-
 const init = () => {
-  const { profile } = siteContent;
-  const emailHref = `mailto:${profile.email}?subject=Data%20Science%20Opportunity`;
+  const { profile, additional } = siteContent;
+  const emailHref = `mailto:${profile.email}?subject=ML%20Engineering%20Conversation`;
 
   document.title = `${profile.name} | ${profile.title}`;
 
   text("#brand-name", profile.name);
-  text("#hero-name", profile.name);
-  text("#hero-role", `${profile.title}.`);
-  text("#hero-summary", profile.summary);
+  text("#hero-role", profile.title);
+  text("#hero-summary", profile.heroSummary);
+  text("#hero-location", profile.location);
+  text("#hero-status", profile.status);
   text("#availability", profile.availability);
+  text("#profile-summary", profile.summary);
+  text("#service-copy", additional.service);
+  text("#interests-copy", additional.interests);
   text("#contact-summary", profile.contactSummary);
   text("#footer-name", profile.name);
   text("#year", new Date().getFullYear());
 
-  setLink("#email-link", emailHref, "Email me");
-  setLink("#contact-email-link", emailHref, "Start a conversation");
-  setLink("#github-link", profile.github, "View GitHub");
-  setLink("#contact-github-link", profile.github, "Explore repositories");
+  setLink("#email-link", emailHref, "Email");
+  setLink("#contact-email-link", emailHref, "Email");
+  setLink("#linkedin-link", profile.linkedin, "LinkedIn");
+  setLink("#contact-linkedin-link", profile.linkedin, "LinkedIn");
+  setLink("#github-link", profile.github, "GitHub");
+  setLink("#phone-link", `tel:${profile.phoneHref}`, profile.phoneDisplay);
 
   renderChips();
-  renderSignals();
-  renderRoles();
-  renderStrengths();
-  renderProjects();
-  renderProcess();
-  renderTimeline();
-  initParticleField(profile.name);
+  renderMetrics();
+  renderFocus();
+  renderHighlights();
+  renderExperience();
+  renderResearch();
+  renderSkills();
+  renderCommunication();
+  renderEducation();
   initReveal();
   initNav();
 };
